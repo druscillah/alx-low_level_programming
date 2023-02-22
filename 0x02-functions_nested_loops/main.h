@@ -9,5 +9,6 @@ void print_alphabet(void);
 int _putchar(char c);
 int _abs(int i);
 int print_last_digit(int l);
+int add(int a, int b);
 
 #endif
