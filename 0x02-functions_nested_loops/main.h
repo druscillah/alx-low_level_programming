@@ -8,6 +8,6 @@ void print_alphabet_x10(void);
 void print_alphabet(void);
 int _putchar(char c);
 int _abs(int i);
-int print_last_digit(int n);
+int print_last_digit(int l);
 
 #endif
