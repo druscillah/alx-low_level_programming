@@ -9,5 +9,6 @@ unsigned int _strspn(char *s, char *accept);
 char *_strchr(char *s, char c);
 char *_memcpy(char *dest, char *src, unsigned int n);
 void _putchar(char c);
+void set_string(char **s, char *to);
 
 #endif
