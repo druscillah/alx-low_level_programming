@@ -2,9 +2,9 @@
 #include <stdlib.h>
 
 /**
- * alloc_grid - the address of the two dimensional grid
+ * alloc_grid - a pointer to a 2 dimensional array of integers
  * @width: width of the grid
- * @length: length of the grid
+ * @height: height of the grid
  * Return: Nothing
  */
 int **alloc_grid(int width, int height)
