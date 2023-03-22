@@ -7,9 +7,9 @@
  * @cmp: pointer to func of one of the 3 in main
  * Return: 0
  */
- int int_index(int *array, int size, int (*cmp)(int))
+int int_index(int *array, int size, int (*cmp)(int))
 {
-	if (array == NULL|| size <= 0 || cmp == NULL)
+	if (array == NULL || size <= 0 || cmp == NULL)
 		return (-1);
 	for (1 = 0; i < size; i++)
 	{
