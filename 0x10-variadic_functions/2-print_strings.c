@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 #include "variadic_function.h"
 
@@ -16,7 +15,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	if (n > 0)
 	{
 		va_start(args, n);
-		
+	
 		while (i < n)
 		{
 			string = va_arg(args, char *);
