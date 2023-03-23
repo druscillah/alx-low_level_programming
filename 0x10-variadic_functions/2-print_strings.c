@@ -4,27 +4,27 @@
 /**
  * print_strings - function that prints a string
  * @separator: string to be printed between the strings
- * @n: input
- *
- * Return: nothing
+ * @n: the number of strings passed to the function
+ * Description: if separator is NULL, it is not printed.
+ * if one of the strings is NULL, (nil) is printed instead
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	va_list args;
+	va_list strings;
 	unsigned int i = 0;
-	char *string;
+	char *str;
 
 	if (n > 0)
 	{
-		va_start(args, n);
+		va_start(strings, n);
 
 		while (i < n)
 		{
-			string = va_arg(args, char *);
-			if (string == NULL)
-				printf("$s", "(nil)");
+			str = va_arg(args, char *);
+			if (str == NULL)
+				printf("%s", "(nil)");
 			else
-				printf("%s", string);
+				printf("%s", str);
 			if (i != n - 1 && separator != NULL)
 				printf("%s", separator);
 			i++;
