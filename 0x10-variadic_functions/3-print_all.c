@@ -8,7 +8,7 @@
  */
 void print_all(const char * const format, ...)
 {
-	va_list args;
+	va_list list;
 	f_dt form_types[] = {
 		{ "c", print_a_char },
 		{ "i", print_a_integer },
@@ -19,7 +19,7 @@ void print_all(const char * const format, ...)
 	unsigned int j = 0;
 	char *separator = "";
 
-	va_start(args, format);
+	va_start(list, format);
 
 	while (format != NULL && format[i])
 	{
@@ -28,7 +28,7 @@ void print_all(const char * const format, ...)
 		{
 			if (format[i] == *form_types[j].identifier)
 			{
-				form_types[j].f(separator, args);
+				form_types[j].f(separator, list);
 				separator = ", ";
 			}
 			j++;
@@ -36,7 +36,7 @@ void print_all(const char * const format, ...)
 		i++;
 	}
 
-	va_end(args);
+	va_end(list);
 	printf("\n");
 }
 
