@@ -61,7 +61,7 @@ void print_a_char(char *separator, va_list args)
   */
 void print_a_integer(char *separator, va_list args)
 {
-	printf("%s%i", separator, va_arg(args, int));
+	printf("%s%d", separator, va_arg(args, int));
 }
 
 /**
